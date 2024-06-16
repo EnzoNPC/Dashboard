@@ -1,3 +1,4 @@
+//sin uso actualmente
 export class EmicEnzWidget extends HTMLElement
 {
     constructor() { super(); }

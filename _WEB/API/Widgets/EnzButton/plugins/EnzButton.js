@@ -1,6 +1,6 @@
-import { EmicEnzWidget } from "./EmicEnzWidget.js";
+import { EmicWidget } from "./emicWidget.js";
 
-class EmicWidgetEnzButton extends EmicEnzWidget {
+class EmicWidgetEnzButton extends EmicWidget {
   
   // Definimos variables.
   static namesList = {};

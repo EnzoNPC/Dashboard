@@ -50,6 +50,8 @@ EMIC:restoreOutput
 // Carga los archivos que controlan los widgets y su carga.
 //-----------------------------------------------------------------------------------
 
+//ESTO LO TIENE QUE HACER NAVENGANDO EN LAS CARPETAS Y COMPROBANDO SI SON COMPATIBLES!!
+
 //Agrego mi custom
 EMIC:setInput(DEV:_WEB/API/Widgets/EnzButton/EnzButton.emic)
 
