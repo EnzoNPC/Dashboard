@@ -1,13 +1,13 @@
 EMIC:setOutput(TARGET:plugins/www/header.html)
-<script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/button.js"> </script>
+<script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/EnzButton.js"> </script>
 EMIC:restoreOutput
 
 EMIC:setOutput(TARGET:temp/header.html)
-<script type="module" src="./JS/button.js"> </script>
+<script type="module" src="./JS/EnzButton.js"> </script>
 EMIC:restoreOutput
 
-EMIC:setOutput(TARGET:wwwroot/JS/Button.js)
-EMIC:setInput(DEV:_WEB/API/Widgets/Button/plugins/button.js)
+EMIC:setOutput(TARGET:wwwroot/JS/EnzButton.js)
+EMIC:setInput(DEV:_WEB/API/Widgets/EnzButton/plugins/EnzButton.js)
 EMIC:restoreOutput
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -15,11 +15,11 @@ EMIC:restoreOutput
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /*RFI JSon
 {
-	'Nombre': 'Button',
-	'NombreToolBox': 'Button',
+	'Nombre': 'EnzButton',
+	'NombreToolBox': 'EnzButton',
 	'Tipo' : 'Widget',
-	'title': 'Botón sin retención',
-	'html-tag': 'emic-widget-button',
+	'title': 'Botón de enzo lambert',
+	'html-tag': 'emic-widget-enz-button',
 }
 */
 //	'instance': '{"component":"emic-widget-button","attributes":{}}',

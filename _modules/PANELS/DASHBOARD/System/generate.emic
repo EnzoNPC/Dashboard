@@ -22,6 +22,9 @@ if ("serviceWorker" in navigator) {
 //-----------------------------------------------------------------------------------
 // Se cargan los archivos de Dashboard, MQTT, tic y system a la pagina.
 //-----------------------------------------------------------------------------------
+
+//ESTO LO TIENE QUE HACER NAVENGANDO EN LAS CARPETAS Y COMPROBANDO SI SON COMPATIBLES!!
+
 EMIC:setInput(DEV:_WEB/API/Dashboard/dashboard.js)
 EMIC:setInput(DEV:_WEB/API/MQTT/mqtt.js)
 EMIC:setInput(DEV:_WEB/API/EMIC_Message/message.js)
@@ -46,6 +49,10 @@ EMIC:restoreOutput
 //-----------------------------------------------------------------------------------
 // Carga los archivos que controlan los widgets y su carga.
 //-----------------------------------------------------------------------------------
+
+//Agrego mi custom
+EMIC:setInput(DEV:_WEB/API/Widgets/EnzButton/EnzButton.emic)
+
 EMIC:setInput(DEV:_WEB/API/Widgets/Button/button.js)
 EMIC:setInput(DEV:_WEB/API/Widgets/CheckBox/checkBox.js)
 EMIC:setInput(DEV:_WEB/API/Widgets/OptionChooser/optionChooser.emic)
