@@ -1,7 +1,5 @@
 //RFI TAG:driverName=HTML Widget
 
-console.log("local_dashboard.js");
-
 /*RFI JSon
 {
 	'Nombre': 'panel',
@@ -15,27 +13,28 @@ console.log("local_dashboard.js");
 		}'
 }
 */
+
 /*RFI JSon
 {
 	'Nombre': 'panelVert',
 	'NombreToolBox': 'Vertical Panel',
-	'Tipo' : 'Widget',
+	'Tipo' : 'emic-component',
 	'title': 'when it receives a text string on the EMIC bus',
 	'html-tag': 'emic-dash-panel',
 	'attributes':{'direction': 'column'}
 }
 */
+
 /*RFI JSon
 {
 	'Nombre': 'panelHoriz',
 	'NombreToolBox': 'Horizontal Panel',
-	'Tipo' : 'Widget',
+	'Tipo' : 'emic-component',
 	'title': 'when it receives a text string on the EMIC bus',
 	'html-tag': 'emic-dash-panel',
 	'attributes':{'direction': 'row'}
 }
 */
-
 
 EMIC:setOutput(TARGET:plugins/www/header.html)
 <script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/dashboard.js"> </script>

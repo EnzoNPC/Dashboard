@@ -1,8 +1,7 @@
 //RFI TAG:driverName=EMIC Message
 
-
 /**
- * @fn void pEmicMessage(int tag,int message)
+ * @fn void pEmicMessage(int tag, int message)
  * @alias send
  * @brief Send Message to widgets
  * @param tag tag

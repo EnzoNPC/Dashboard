@@ -1,6 +1,5 @@
 //RFI TAG:driverName=HTML Widget
 
-
 EMIC:setOutput(TARGET:plugins/www/header.html)
 <script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/inputTime.js"> </script>
 EMIC:restoreOutput
@@ -48,7 +47,7 @@ EMIC:restoreOutput
 //                                 Funciones
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
- * @fn void timeSetValue(int timeName,int Value)
+ * @fn void timeSetValue(int timeName, int Value)
  * @alias timeSetValue
  * @brief Set Value
  * @param timeName timeName
@@ -78,6 +77,3 @@ function timeSetValue(timeName, value) {
     console.log("Elemento con id ", tName, " no encontrado");
   }
 }
-
-
-

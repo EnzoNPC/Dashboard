@@ -1,3 +1,5 @@
+//RFI TAG:driverName=HTML Widget
+
 EMIC:setOutput(TARGET:plugins/www/header.html)
 <script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/EnzButton.js"> </script>
 EMIC:restoreOutput
@@ -22,7 +24,7 @@ EMIC:restoreOutput
 	'html-tag': 'emic-widget-enz-button',
 }
 */
-//	'instance': '{"component":"emic-widget-button","attributes":{}}',
+//	'instance': '{"component":"emic-widget-enz-button","attributes":{}}',
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //                                 Eventos
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -33,13 +35,12 @@ EMIC:restoreOutput
 	'Tipo' : 'SistemEvt',
 	'title': 'when press mouse over button',
 	'instancia':'{
-		"NombreWorkBox": "Event.Button.Presionado",
+		"NombreWorkBox": "Event.EnzButton.Presionado",
 		"definir":"event_mousedown_active",
 		"parametros": [{"value":"Button","title":"Button name "}]
 		}'
 }
 */
-
 
 /*RFI JSon
 {
@@ -48,7 +49,7 @@ EMIC:restoreOutput
 	'Tipo' : 'SistemEvt',
 	'title': 'time in which the button was up in [ms], when up mouse over button',
 	'instancia':'{
-		"NombreWorkBox": "Event.Button.Soltado",
+		"NombreWorkBox": "Event.EnzButton.Soltado",
 		"definir":"event_mousedown_active",
 		"parametros": [	{"value":"ChecktBox","title":"ChecktBox name "},{"value":"TimeEndClick","title":"time in which the button was up in [ms] "}]
 		}'

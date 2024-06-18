@@ -1,6 +1,5 @@
 //RFI TAG:driverName=HTML Widget
 
-
 EMIC:setOutput(TARGET:plugins/www/header.html)
 <script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/inputNum.js"> </script>
 EMIC:restoreOutput
@@ -49,7 +48,7 @@ EMIC:restoreOutput
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 /**
- * @fn void numSetValue(int numberId,int Value)
+ * @fn void numSetValue(int numberId, int Value)
  * @alias numSetValue
  * @brief Set Value
  * @param numberId numberId
@@ -84,7 +83,7 @@ function numSetValue(numberId, Value){
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 /**
- * @fn int numGetValue(int numberId,int Value)
+ * @fn int numGetValue(int numberId, int Value)
  * @alias numGetValue
  * @brief Set Value
  * @param numberId numberId

@@ -1,7 +1,5 @@
 //RFI TAG:driverName=HTML Widget
 
-
-
 EMIC:setOutput(TARGET:plugins/www/header.html)
 <script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/button.js"> </script>
 EMIC:restoreOutput
@@ -13,6 +11,7 @@ EMIC:restoreOutput
 EMIC:setOutput(TARGET:wwwroot/JS/Button.js)
 EMIC:setInput(DEV:_WEB/API/Widgets/Button/plugins/button.js)
 EMIC:restoreOutput
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //                                 Componente
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -43,7 +42,6 @@ EMIC:restoreOutput
 }
 */
 
-
 /*RFI JSon
 {
 	'Nombre': 'buttonRelease',
@@ -57,4 +55,3 @@ EMIC:restoreOutput
 		}'
 }
 */
-

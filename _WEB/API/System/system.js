@@ -1,4 +1,5 @@
 //RFI TAG:driverName=SYSTEM
+
 /*RFI JSon
 {
 	'Nombre': 'INIVAR',
@@ -147,7 +148,3 @@ document.addEventListener('DOMContentLoaded', function() {
 	  INICIO(); 
 	}
   });
-
-
-
-
