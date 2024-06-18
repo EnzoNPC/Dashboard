@@ -1,5 +1,17 @@
 //RFI TAG:driverName=HTML Widget
 
+EMIC:setOutput(TARGET:plugins/www/header.html)
+<script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/dashboard.js"> </script>
+EMIC:restoreOutput
+
+EMIC:setOutput(TARGET:temp/header.html)
+<script type="module" src="./JS/dashboard.js"> </script>
+EMIC:restoreOutput
+
+EMIC:setOutput(TARGET:wwwroot/JS/dashboard.js)
+EMIC:setInput(DEV:_WEB/API/Dashboard/plugins/dashboard.js)
+EMIC:restoreOutput
+
 /*RFI JSon
 {
 	'Nombre': 'panel',
@@ -35,15 +47,3 @@
 	'attributes':{'direction': 'row'}
 }
 */
-
-EMIC:setOutput(TARGET:plugins/www/header.html)
-<script type="module" src="/dashboard/.{userName}./.{project}./.{userModule}./JS/dashboard.js"> </script>
-EMIC:restoreOutput
-
-EMIC:setOutput(TARGET:temp/header.html)
-<script type="module" src="./JS/dashboard.js"> </script>
-EMIC:restoreOutput
-
-EMIC:setOutput(TARGET:wwwroot/JS/dashboard.js)
-EMIC:setInput(DEV:_WEB/API/Dashboard/plugins/dashboard.js)
-EMIC:restoreOutput
